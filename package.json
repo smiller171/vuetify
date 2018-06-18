@@ -27,7 +27,8 @@
     "lint": "eslint --ext .js,.vue src",
     "preparecommitmsg": "node dev/prepare-commit-message.js",
     "commitmsg": "node dev/lint-commit-message.js",
-    "precommit": "node dev/warn-npm-install.js && yarn lint && yarn test"
+    "precommit": "node dev/warn-npm-install.js && yarn lint && yarn test",
+    "prepack": "npm install; npm run build"
   },
   "description": "Vue.js 2 Semantic Component Framework",
   "devDependencies": {
